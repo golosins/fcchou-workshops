@@ -1,0 +1,447 @@
+html, body {
+	background-color: #f5f5f5;
+}
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #404040;
+}
+
+main {
+	width: 94%;
+	margin: 0 3%;	
+	}
+
+nav{
+	font-family: Arial, "Times New Roman", serif;	
+	border: 1px solid #06425C;
+	color:#06425C;
+	background-color:#06425c;
+	overflow: auto;
+	padding-left:8%;
+	}
+
+nav a{
+	display: inline-block;
+	width:12vw;
+	background-color:#06425c;
+	color:#fff;
+	text-align: center;
+	font-size: 1.4rem;
+	padding:0.2rem 2vw;
+	text-decoration: none;	
+	border-color: #000;		
+	}
+
+nav a.active {
+	background-color:#fff;
+	color:#000099;
+	font-size: 1.6rem;
+    cursor: default;
+	text-decoration: underline;
+	}
+
+nav a:hover {
+	background-color:#ffd423;
+	color:#000;
+	text-shadow: 1px 1px #888;	
+	}
+
+.columnContainer, .columnContainerPage {
+	display: grid;
+	grid-template-columns: auto;
+	width: 95%;
+	margin: 0 auto;
+
+}
+
+
+@media all and (min-width: 800px) and (max-width: 1200px) {
+	.columnContainer {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-column-gap: 2rem;	
+		width: 90%;
+		margin: 0.5rem auto;
+}
+
+	.columnContainerPage {
+		display: grid;
+		grid-template-columns: auto;
+		width: 70%;
+		margin: 0.5rem auto;
+}
+
+}
+
+@media all and (min-width: 1201px) {
+	.columnContainer, .columnContainerPage {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-column-gap: 2rem;	
+		width: 95%;
+		margin: 0.5rem auto;
+}
+}
+
+.column {
+	margin-top:2rem;
+	background-color: #ffd42344;
+	} 
+
+.columnHi {
+	height:90%;
+}
+.columnLow {
+	height:10%;
+}
+
+h1 {
+	font-size: 3rem;
+	margin: 0;
+	padding: 0.3em 0 0;
+	letter-spacing: 0.5em;
+	}
+
+h2 {
+	font-size: 2rem;
+	margin: 0;
+	padding: 0.3em 0 0;
+	letter-spacing: 0.3em;	
+	}
+
+h3 {
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 1em 0 0;
+	}
+
+h4 {
+	font-size: 1.3rem;
+	margin: -0.5em 1em;
+	padding: 0;
+	}
+
+h1, h2, h3, h4{
+	text-align: center;
+	text-transform: uppercase;
+	color:#06425c;	
+	}
+
+.introText {
+	font-size: 1.1rem;
+    line-height: 1.6rem;
+    padding: 1em 0.5em;
+	}
+
+.subTitles {
+	z-index:5;
+	color:#ffd423;
+	margin-top:0.5em;
+	letter-spacing: 0.5em;	
+	font-size: 3rem;
+	text-shadow: 1px 1px 8px #444;		
+	}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 80vh;   
+	}
+
+@media all and (min-width:900px) {
+	.parallax {
+		min-height: 50vh;   
+	}
+}
+
+.parallax1 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 80vh;   	
+	background-image: url("../img/HoustonHeroPicHomeFull.jpg");
+	}
+
+.parallax2 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 80vh;   	
+    background-image: url("../img/HoustonHeroPicHomeFull.jpg");
+}	
+
+.parallax3 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 80vh;   	
+    background-image: url("../img/HoustonHeroPicHarrisFull.jpg");
+}	
+
+.parallax4 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 80vh;   	
+    background-image: url("../img/HoustonHeroPicGreatHoustonFull.jpg");
+}
+
+.parallax5 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 80vh;   	
+    background-image: url("../img/HoustonHeroPicGreatHoustonFull.jpg");
+}
+
+.parallax6 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 80vh;   	
+    background-image: url("../img/HoustonHeroPicNasaFull.jpg");
+}
+
+@media all and (min-width: 800px) and (max-width: 1200px) {
+	.parallax1, .parallax3, .parallax4, .parallax5, .parallax6 {
+		min-height: 28vh;   
+		background-attachment: unset;			
+	}	
+	.subTitles {
+		font-size:5rem;
+		text-shadow: 1px 1px 8px #444;
+		}
+	
+}
+
+@media all and (min-width: 1201px) {
+	.parallax1, .parallax3, .paralax4, .paralax5, .paralax6 {
+		//min-height: 50vh;   	
+	}			
+}
+
+.parallaxText {
+  height:25vw;
+  padding: 0.2vw;
+  margin-top:0;
+  text-align:center;
+  background-color:#f5f5f5;
+}
+.parallaxTextLong {
+  height:auto;
+  padding: 0.2vw;
+  margin-top:-5vh;
+  text-align:center;
+  background-color:#f5f5f5;
+}
+
+.parallaxTextH {
+  color:#06425C;
+  font-size:2.8vw;
+  letter-spacing: 0.4em;	
+}
+
+.parallaxTextT {
+  font-size:2.2vw;
+  font-stretch: normal;
+}
+
+.parallaxTextD {
+  font-size:1.8vw;
+  font-stretch: normal;
+  line-height: 1.3em;
+  font-style: normal;
+  text-align: left;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.parallaxTextS {
+  font-size:1.8vw;
+  font-stretch: normal;
+  line-height: 1.3em;
+  font-style: oblique;
+  text-align: left;
+  margin: 0.5em auto;
+  width: 60%;  
+}
+
+.imgHomeIntro {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.imgPageIntro {
+  width: 100%;
+  box-shadow: #888 3px 3px 10px;
+}
+
+.imgHomeIntro1 {
+  background-image: url("../img/HomeFeatPic1.jpg");
+  background-size: cover;
+}
+
+.imgHomeIntro2 {
+  background-image: url("../img/HomeFeatPic2.jpg");
+  background-size: cover;
+}
+
+.imgHomeIntro3 {
+  background-image: url("../img/HomeFeatPic3.jpg");
+  background-size: cover;
+}
+
+.imgHomeIntro4 {
+  background-image: url("../img/HomeFeatPic4.jpg");
+  background-size: cover;
+}
+
+.imgHomeIntro5 {
+  background-image: url("../img/HomeFeatPic5.jpg");
+  background-size: cover;
+}
+
+.imgHomeIntro10 {
+  background-image: url("../img/NasaFeatPic1.jpg");
+  background-size: cover;
+}
+
+.imgHomeIntro11 {
+  background-image: url("../img/NasaFeatPic3.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sealHouTx {
+  width:10%;
+  margin: 0 auto;
+
+}
+
+footer{
+  color:#06425C;
+  background-color:#ffd423;
+  text-align:left;
+  font-style: oblique; 
+  padding:1rem 5%;
+  clear: both;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttonHome {
+  background-color: #fff; 
+  color: #000; 
+  border: 2px solid #06425c;
+//  position: flex;
+//  align-items: flex-end;
+  margin: 1em 2em;
+}
+
+.buttonHome:hover {
+  background-color: #06425c;
+  color: #fff;
+}
+
+.buttonPage {
+  background-color: #fff; 
+  color: #000;
+  border: 2px solid #ffd423;
+}
+
+.buttonPage:hover {
+  background-color: #ffd423;
+  color: #fff;
+}
+
+
+.row {
+  margin:0 15%;
+
+}
+
+.imgGallery {
+	text-align: center;
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+.columnPicGaL {
+  float: left;
+  width: 23%;
+  padding: 1%
+}
+
+/* Style the images inside the grid */
+.columnPicGaL img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.columnPicGaL img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #f5f5f5;
+  text-shadow: 1px 1px #555;
+  font-size: 32px;
+  font-weight: 600;
+  background-color: #8886;
+  padding: 8px 32px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+
+

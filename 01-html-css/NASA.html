@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Houston - NASA</title>
+        <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="HarrisCounty.html">Harris County</a>
+        <a href="GreaterHouston.html">Greater Houston</a>
+        <a href="NASA.html">NASA</a>
+        <a href="Houston Website - Description.pdf">About</a>        
+      </nav>
+    <header>
+	        <h1>NASA in Houston</h1>
+    </header>
+    
+  <main>
+    <!-- Content -->
+    <article>
+      <section class="parallax6">
+          <h2 class="subTitles">NASA Mission Control</h2>
+      </section>
+
+      <section class="parallaxTextLong">
+          <h3 class="parallaxTextH">Everybody Love NASA</h3>
+         <img class="sealHouTx" src="img/SealHoustonTexas.png" alt="Houston Texas Seal">
+
+          <p class="parallaxTextD">As the lander touched down, Mr Aldrin said:</p>
+          <p class="parallaxTextS">"Okay, contact light. Okay, engine stop."</p>
+          <p class="parallaxTextD">The radio then went queit for around 15 seconds, before Mr Armstrong added:</p> 
+          <p class="parallaxTextS">"Houston, Tranquility Base here. The Eagle has landed."</p>
+          <p class="parallaxTextD">Mission Control in Houston then burst into cheers, before they responded:</p>
+          <p class="parallaxTextS">"Roger, Tranquility. We copy you on the ground. You got a bunch of guys about to turn blue. We're breathing again, thanks a lot."
+        </p>
+      </section>
+
+      <section class="columnContainerPage">
+        <div class="column">
+            <img class="imgPageIntro" src="img/NasaFeatPic1.jpg" alt="Apollo 11 on the Moon"> 
+        </div>     
+
+      <div class="column">
+        <h3>NASA in Houston</h3>          
+        <p class="introText">The Lyndon B. Johnson Space Center, originally known as the Manned Spacecraft Center, is one of ten National Aeronautics and Space Administration field centers and home base for the nation's astronauts.</p>
+        <h4>The Artemis Program</h4>  
+        <p class="introText">With the Artemis program, NASA will land the first woman and next man on the Moon by 2024. The words from the Program, follows.</p>
+      </div>
+        <div class="column">
+            <img class="imgPageIntro" src="img/NasaFeatPic3.png" alt="NASA Artemis Program Logo"> 
+        </div>  
+      </section>
+      &nbsp;
+      <section>
+        <h3>Artemis Program Highlights</h3> 
+        <p class="introText">"America has entered a new era of exploration. NASA’s Artemis program will lead humanity forward to the Moon and prepare us for the next giant leap, the exploration of Mars. It has been almost 50 years since astronauts last walked on the lunar surface during the Apollo program, and since then the robotic exploration of deep space has seen decades of technological advancement and scientific discoveries. For the last 20 years, humans have continuously lived and worked aboard the International Space Station 250 miles above Earth, preparing for the day we move farther into the solar system.</p>  
+
+        <p class="introText">Sending human explorers 250,000 miles to the Moon, then 140 million miles to Mars, requires a bold vision, effective program management, funding for modern systems development and mission operations, and support from all corners of our great nation as well as our partners across the globe.  NASA has been fine-tuning the plan to achieve that bold vision since the president called on the agency in December 2017 to lead a human return to the Moon and beyond with commercial and international partners. Two years later, he challenged us yet again, this time to send the first woman and next man to the Moon within five years. NASA is implementing the Artemis program to achieve those goals, and this document lays out the agency’s Moon to Mars exploration approach explaining how we will do it.</p>
+
+        <p class="introText">The Moon plan is twofold: it’s focused on achieving the goal of an initial human landing by 2024 with acceptable technical risks, while simultaneously working toward sustainable lunar exploration in the mid- to late 2020s. 2024 is not an arbitrary date. It is the most ambitious date possible, and our success at the Moon, and later, at Mars, will be grounded in our national goals and robust capabilities. The United States leads in space exploration now; however, as more countries and companies take aim at the Moon, America needs the earliest possible landing to maintain and build on that leadership, as well as to prepare for a historic first human mission to Mars.</p>
+
+        <p class="introText">Landing astronauts on the Moon within four years will better focus this global initiative on the engineering, technology development, and process improvements necessary to safely and successfully carry out sustained human exploration of the Moon. It also paves the way for U.S. commercial companies and international partners to further contribute to the exploration and development of the Moon.</p>
+
+        <p class="introText">We need several years in orbit and on the surface of the Moon to build operational confidence for conducting long-term work and supporting life away from Earth before we can embark on the first multi-year human mission to Mars.<br>The sooner we get to the Moon, the sooner we get American astronauts to Mars.We need to act fast to make this vision a reality, and a crewed lunar landing by 2024 is the key to a successful Moon to Mars exploration approach. Our next lunar landing paves the way for a new and sustainable lunar economy—one where U.S. companies and international partners will benefit from and build on what we learn."</p>
+
+        <p class="introText">We are all watching you, NASA.</p>
+      </section>
+
+      <section>
+        <h2>NASA Gallery - The Artemis Program</h2>
+        <p class="imgGallery">Click on the images below:</p>
+<!-- The four columns -->
+        <div class="row">
+          <div class="columnPicGaL">
+            <img src="img/NasaGallery1.jpg" alt="Ready to go back." style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="columnPicGaL">
+            <img src="img/NasaGallery2.jpg" alt="It's not only NASA." style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="columnPicGaL">
+            <img src="img/NasaGallery3.jpg" alt="Houston, Orion has landed." style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="columnPicGaL">
+            <img src="img/NasaGallery4.jpg" alt="We have a lift-off!" style="width:100%" onclick="myFunction(this);">
+          </div>
+        </div>
+        <div class="row">
+        <div class="container">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:100%">
+          <div id="imgtext"></div>
+        </div>
+        </div>
+      </section>
+    </article>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+
+    </main>
+    <footer>
+      <p>© 2020-2022 by Stevica Golosin | All right reserved</p>
+    </footer>
+
+  </body>
+</html>
